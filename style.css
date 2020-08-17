@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: #3394FF;
+  font-family: Helvetica, Arial, sans-serif;
+  
+}
+
+/*This will apply styles to <header>*/
+header {
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #24384f;
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+  color: white;
+}
+
+header a{
+  text-decoration: underline;
+  color:white;
+}
+
+header nav{
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+footer h2 {
+
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: #024e76;
+
+}
+
+section {
+  padding: 60px;
+  
+}
+
+.first-box {
+  padding-top:100px;
+  background-image: url("kawaii-bg.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  min-height:325px;
+  object-fit: fill;
+}
+
+* {
+box-sizing: border-box;
+}
+
+/* Keep this bitch at the END of all these styles, v important*/
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREEN AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hero-cta, .hero-form {
+        width: 100%;
+      }
+      
+      .hero-cta {
+        text-align: center;
+      }
+    .section-title {
+        width: 80%;
+      }
+      
+      .trainer {
+        flex: 0 70%;
+      }
+      
+      .contact-info iframe{
+        flex: 1 100%;
+      }
+  }
+  
+  
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */ 
+  
+  @media screen and (max-width: 768px) {
+  
+    section {
+      padding: 30px 15px;
+    }
+  
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  
+    .service-grid-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .service-grid-item.basic {
+      grid-column: 1;
+    }
+  
+    .service-grid-item.both {
+      grid-column: 1 / -1;
+    }
+  
+    .service-grid-item.cancel {
+      transform: none;
+      writing-mode: unset;
+      grid-column: 1 / -1;
+      grid-row: -1;
+    }
+    
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+  
+  .hero-form button {
+    width: 100%;
+  }
+  
+  .section-title {
+    width: 95%;
+  }
+  
+  .intro p {
+    width: 100%;
+  }
+  
+  .trainer {
+    flex: 0 100%;
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+  
+  .contact-info > * {
+    flex: 0 100%;
+  }
+  
+  .contact-form {
+    order: 3;
+  }
+  
+  }
