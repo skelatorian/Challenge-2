@@ -5,7 +5,7 @@
 }
 
 body{
-  color: #3394FF;
+  color: #475772;
   font-family: Helvetica, Arial, sans-serif;
   
 }
@@ -19,16 +19,38 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #24384f;
+  background-color: #475772;
   background-size: cover;
   background-position: 80%;
   background-attachment: fixed;
-  color: white;
+}
+
+.box {
+  background: #9cc4cc;
+  color: #475772;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #475772;
+  margin: 0;
+  background: transparent;
+  
+}
+
+.about-me p {
+  align-items: flex-start;
+}
+
+.box {
+  background: #9cc4cc;
+  color: #475772;
 }
 
 header a{
   text-decoration: underline;
-  color:white;
+  color: #9cc4cc;
 }
 
 header nav{
@@ -50,184 +72,55 @@ header nav ul li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-footer {
-  background: #fce138;
-  width: 100%;
-  padding: 40px 35px;
-  display:flex;
-  justify-content: space-between;
+.hero{
+  background-image: url(https://www.wallpaperflare.com/static/301/722/478/abstract-graphic-design-vector-white-wallpaper.jpg);
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
-
-footer h2 {
-
-  color: #024e76;
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: #024e76;
-
-}
-
+/*for the background size*/
 section {
-  padding: 60px;
-  
-}
-
-.first-box {
-  padding-top:100px;
-  background-image: url("kawaii-bg.jpg");
-  background-size:100%;
-  background-repeat: no-repeat;
-  min-height:325px;
-  object-fit: fill;
+  padding: 100px;
 }
 
 * {
 box-sizing: border-box;
 }
 
-/* Keep this bitch at the END of all these styles, v important*/
+.float-container {
+  border: 3px transparent;
+  padding: 20px;
+}
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREEN AND SMALLER */
-@media screen and (max-width: 980px) {
-    header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
-    }
-  
-    header h1 {
-      width: 100%;
-      text-align: center;
-    }
-  
-    header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-    }
-  
-    header nav ul li a {
-      font-size: 20px;
-    }
-  
-    footer h2, footer div {
-      text-align: center;
-      width: 100%;
-    }
-  
-    .hero-cta, .hero-form {
-        width: 100%;
-      }
-      
-      .hero-cta {
-        text-align: center;
-      }
-    .section-title {
-        width: 80%;
-      }
-      
-      .trainer {
-        flex: 0 70%;
-      }
-      
-      .contact-info iframe{
-        flex: 1 100%;
-      }
-  }
-  
-  
-  
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */ 
-  
-  @media screen and (max-width: 768px) {
-  
-    section {
-      padding: 30px 15px;
-    }
-  
-    .step h3 {
-      flex: 1 100%;
-      text-align: center;
-    }
-  
-    .step-info {
-      flex: 2 100%;
-      text-align: center;
-      justify-content: center;
-    }
-  
-    .step-img {
-      flex: 0 32%;
-      margin-right: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-  
-    .step-text {
-      flex: 100%;  
-    }
-  
-    .service-grid-container {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .service-grid-item.basic {
-      grid-column: 1;
-    }
-  
-    .service-grid-item.both {
-      grid-column: 1 / -1;
-    }
-  
-    .service-grid-item.cancel {
-      transform: none;
-      writing-mode: unset;
-      grid-column: 1 / -1;
-      grid-row: -1;
-    }
-    
-  }
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
-  
-  .hero-form button {
-    width: 100%;
-  }
-  
-  .section-title {
-    width: 95%;
-  }
-  
-  .intro p {
-    width: 100%;
-  }
-  
-  .trainer {
-    flex: 0 100%;
-  }
-  
-  .contact-info {
-    text-align: center;
-  }
-  
-  .contact-info > * {
-    flex: 0 100%;
-  }
-  
-  .contact-form {
-    order: 3;
-  }
-  
-  }
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  border: 2px;
+}
+
+/*Contact Me Styling*/
+
+.contact {
+  font-weight: bold;
+  font-size: 15px;
+  color: #4d5d77;
+  margin: 0;
+  background: transparent;
+  text-decoration: underline;
+}
+
+.contact nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
